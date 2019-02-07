@@ -63,7 +63,6 @@ body {
   border: 1px solid #fff;
   background-color: rgba(255, 255, 255, 0.15);
 }
-
 .mouse-over a:hover svg,
 .mouse-over a:hover img {
   opacity: 0.7;
@@ -269,6 +268,7 @@ body {
 .contact-form {
   width: 30%;
   margin: 50px auto 0;
+  margin-bottom: 50px;
 }
 .contact-form input[type=text] {
   display: block;
