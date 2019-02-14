@@ -6,6 +6,7 @@
   <title>Daichi Yamashita's portfolio</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:700,400">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -13,11 +14,13 @@
 <body>
   <header class="header">
     <p class="site-title-sub">Web Enginner's portfolio</p>
-    <h1 class="site-title">HI, I'M DAICHI YAMASHITA</h1>
+    <h1 class="site-title">HI, I'M DAICHI</h1>
     <p class="site-description">Check out some of my skills.</p>
     <div class="buttons">
       <a class="button" href="#about">LEARN MORE</a>
-      <a class="button button-showy" href="#contact">SEND MESSAGE</a>
+      <a class="button button-showy" href="#skills">CHECK SKILLS</a>
+      <a class="button button-showy" href="#works">CHECK WORKS</a>
+      <a class="button" href="#contact">SEND MESSAGE</a>
     </div>
   </header>
   <section class="about" id="about">
@@ -26,11 +29,11 @@
       1993年生まれで情報系短期大学を卒業後、都内でエンジニアとして活動しています。
     </p>
     <p class="about-text">
-      新卒として入ったSi事業会社の社内開発としてJava(Spring,Spring Boot),JavaScript(ES5)を主に経験しました(5年間)。<br>
-      WEB系のフルスタックエンジニアを目指すべく、いろいろなことに挑戦しています。
+      新卒として入ったSi事業会社の社内Webアプリケーション開発の中で、バックエンド(Java/Spring)を主軸に、フロントエンドからインフラまで広く経験しました。<br>
+      WEB系のフルスタックを目指すべく、いろいろなことに挑戦したいです。
     </p>
   </section>
-  <section class="skills">
+  <section class="skills" id="skills">
     <h2 class="heading">MY SKILLS</h2>
     <div class="skills-wrapper">
       <div class="skill-box">
@@ -181,62 +184,63 @@
       </div>
     </div>
   </section>
-  <section class="about">
+  <section class="about" id="wanttodo">
     <h2 class="heading">WANT TO DO</h2>
-      <p class="about-text">
-        <h3>Back-end</h3>
-        Java経験が多いですが、エンタープライズな言語よりもモダンな開発言語を経験して視野を広げたいです。<br>
-        バックエンドから派生して、インフラ領域(DevOps)も興味があります。
-      </p>
-      <p class="about-text">
-        <h3>Front-end</h3>
-        モダンなJavaScriptアプリケーション(ES2015以降)、SPA開発に興味があります。<br>
-        SPAフレームワークを通して学習中です。
-      </p>
-      <p class="about-text">
-        <h3>開発思想</h3>
-        アジャイル／スクラム開発、ドメイン駆動設計、テスト駆動開発など興味があります。          
-      </p>
+    <p class="about-text">
+      <h3>Back-end</h3>
+      Java経験が多いですが、エンタープライズな言語よりもモダンな開発言語や別パラダイムな言語を経験して視野を広げたいです。<br>
+      バックエンドから派生して、インフラ領域(DevOps)も興味があります。
+    </p>
+    <p class="about-text">
+      <h3>Front-end</h3>
+      モダンなJavaScriptアプリケーション(ES2015以降)、SPA開発に興味があります。<br>
+      SPAフレームワークを通して学習中です。
+    </p>
+    <p class="about-text">
+      <h3>Scheme</h3>
+      アジャイル／スクラム開発、ドメイン駆動設計、テスト駆動開発など興味があります。          
+    </p>
   </section>
-  <section class="works">
+  <section class="works" id="works">
     <h2 class="heading">WORKS</h2>
     <div class="works-wrapper">
       <div class="work-box tree">
-        <img class="work-image" src="images/32187_main2.jpg" alt="制作事例1">
+        <img class="work-image" src="images/32187_main2.jpg" alt="ポートフォリオ">
         <div class="work-description">
           <div class="work-description-inner">
             <p class="work-text">
-              portfolio<br>
+              ポートフォリオ<br>
               本サイトです。<br>
-              使用ツール：HTML5, CSS3, JavaScript<br>
-              <a href="#" class="button button-ghost">READ MORE</a>
+              使用技術：HTML5, CSS3, JQuery3.x, Swiper4.x, Font Awesome
             </p>
           </div>
         </div>
       </div>
       <div class="work-box building">
-        <img class="work-image" src="images/twitter10.jpg" alt="制作事例2">
+        <img class="work-image" src="images/twitter10.jpg" alt="ツイート検索">
         <div class="work-description">
           <div class="work-description-inner">
             <p class="work-text">
-              Twitter検索<br>
-              ツイートの検索において、詳細条件を楽に指定できるアプリ風サイトです。<br>
+              ツイート検索<br>
+              ツイートの検索において、詳細条件の指定が簡単にできます。<br>
               特定のツイートや人気のツイートを探すときに便利です。<br>
-              使用ツール：HTML5, CSS3, JavaScript, Vue, Onsen UI 2<br>
-              <a href="#" target="_blank" class="button button-ghost">READ MORE</a>
+              スマートフォンで見ることを前提としたUIです。<br>
+              使用技術：HTML5, CSS3, JavaScript(ES2015), Vue 2.6.x, Onsen UI 2.x<br>
+              <a href="https://github.com/dahiyu/search-twitter" target="_blank" class="button button-ghost">Github</a>
+              <a href="https://dahiyu.github.io/search-twitter/" target="_blank" class="button button-ghost">APP(smartphone)</a>
             </p>
           </div>
         </div>
       </div>
       <div class="work-box lake">
-        <img class="work-image" src="images/pythonfeatured.jpg" alt="制作事例3">
+        <img class="work-image" src="images/pythonfeatured.jpg" alt="Webスクレイピングスクリプト">
         <div class="work-description">
           <div class="work-description-inner">
             <p class="work-text">
               Webスクレイピングスクリプト<br>
               Webサイトのスクレイピングを行い、DBに保存するスクリプトです。<br>
-              使用ツール：Python, Selenium<br>
-              <a href="https://github.com/dahiyu/crawler" target="_blank" class="button button-ghost">READ MORE</a>
+              使用技術：Python3.x, Selenium, MongoDB<br>
+              <a href="https://github.com/dahiyu/crawler" target="_blank" class="button button-ghost">Github</a>
             </p>
           </div>
         </div>
@@ -246,17 +250,17 @@
         <div class="work-description">
           <div class="work-description-inner">
             <p class="work-text">
-              よっつめの制作事例が入ります。<br>
-              簡単な説明が入ります。<br>
-              使用ツール：XXX, XXX, XXX<br>
-              <a href="#" class="button button-ghost">READ MORE</a>
+              Twitter Bot<br>
+              定期的にWebサイトの情報をスクレイピングし、ツイートします。<br>
+              使用技術：Python3.x, Feedparser, Beautiful Soup, Twitter API<br>
+              <a href="https://github.com/dahiyu/twitter-bot" class="button button-ghost">Github</a>
             </p>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="about">
+  <section class="about" id="readbooks">
     <h2 class="heading">READ BOOKS</h2>
     <!-- Swiper -->
     <div class="swiper-container">
@@ -482,8 +486,11 @@
   <footer class="footer">
     <small>&copy; 2019 dahiyu.github.io</small>
   </footer>
+  <p id="PageTopBtn"><a href="#wrap"><i class="fas fa-angle-double-up"></i></a></p>
   <script src="lib/placeholders.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
   <script src="js/initialize_swiper.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/scroll.js"></script>
 </body>
 </html>
