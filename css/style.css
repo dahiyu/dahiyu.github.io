@@ -64,8 +64,7 @@ body {
   border: 1px solid #fff;
   background-color: rgba(255, 255, 255, 0.15);
 }
-.mouse-over a:hover svg,
-.mouse-over a:hover img {
+.mouse-over a:hover svg {
   opacity: 0.7;
   filter: alpha(opacity=70);
   -ms-filter: "alpha(opacity=70)";
@@ -122,13 +121,93 @@ body {
 
 
 /* --------------------------------
+ * skills
+ * -------------------------------- */
+.skills {
+  padding: 80px 0;
+  background-color: #383634;
+}
+.skills-wrapper {
+  display: table;
+  width: 100%;
+  margin-top: 60px;
+  table-layout: fixed;
+}
+.skill-box {
+  position: relative;
+  display: table-cell;
+}
+.skill-title {
+  margin: 10px 0px 10px 0px;
+  font-size: 2rem;
+}
+.skill-description {
+  margin: 0px 15px 0px 10px;
+  font-size: 1.2rem;
+}
+.skill-list {
+  list-style: none;
+  padding-left: 0;
+}
+.skill-item .technology {
+  display: inline-block;
+  width: 60%;
+  border-radius: 5px;
+  /* background-color: #d03c56; */
+  /* color: #fff; */
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 1.6rem;
+  line-height: 25px;
+}
+.skill-item .level {
+  margin: 0px 50px 0px 0px;
+  letter-spacing: 2px;
+  font-size: 1.6rem;
+}
+.skill-box::after {
+  content: '';
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.2;
+  /* transform: scaleY(-1); */
+}
+.skill-box.tree::after {
+  background-image: url('../images/skill/spring.png');
+}
+.skill-box.building::after {
+  background-image: url('../images/skill/frontendMap-base1.jpg');
+}
+.skill-box.lake::after {
+  background-image: url('../images/skill/rdbms_og.jpg');
+}
+.skill-box.sky::after {
+  background-image: url('../images/skill/docker.png');
+}
+
+
+
+
+
+
+
+
+/* --------------------------------
  * works
  * -------------------------------- */
 .works {
   padding: 80px 0;
-  background-color: #383634;
+  background-color: #fff;
+  color: #333;
 }
 .works-wrapper {
+  /* background-color: #383634;
+  color: #fff; */
   display: table;
   width: 100%;
   margin-top: 60px;
@@ -170,6 +249,7 @@ body {
   padding: 3px;
 }
 .work-box::after {
+  
   content: '';
   position: absolute;
   top: 50%;
@@ -182,16 +262,16 @@ body {
   transform: scaleY(-1);
 }
 .work-box.tree::after {
-  background-image: url('../images/32187_main2.jpg');
+  background-image: url('../images/work/cat-2352807_640-3.jpg');
 }
 .work-box.building::after {
-  background-image: url('../images/twitter10.jpg');
+  background-image: url('../images/work/cell-phone-1245663_640.jpg');
 }
 .work-box.lake::after {
-  background-image: url('../images/pythonfeatured.jpg');
+  background-image: url('../images/work/pythonfeatured.jpg');
 }
 .work-box.sky::after {
-  background-image: url('../images/sky.jpg');
+  background-image: url('../images/work/chatbot-3589528_640.jpg');
 }
 .work-box:nth-child(odd) .work-image {
   margin: 60% 0 0;
@@ -203,61 +283,14 @@ body {
 
 
 /* --------------------------------
- * skills
+ * read books
  * -------------------------------- */
-
-.skill-list {
-  list-style: none;
-  padding-left: 0;
-}
-.skill-item .technology {
-  display: inline-block;
-  width: 60%;
-  border-radius: 5px;
-  /* background-color: #d03c56; */
-  /* color: #fff; */
-  text-align: center;
-  letter-spacing: 1px;
-  /* font-size: 1.0rem; */
-  line-height: 25px;
-}
-.skill-item .level {
-  margin: 0px 50px 0px 0px;
-}
-
-.skills {
-  padding: 80px 0;
-  /* background-color: #fff; */
+ .readbook {
+  padding: 80px 30px;
   background-color: #383634;
-  /* color: #333; */
+  color: #fff;
 }
-.skills-wrapper {
-  display: table;
-  width: 80%;
-  margin: 50px auto 0;
-  table-layout: fixed;
-}
-.skill-box {
-  display: table-cell;
-}
-.skill-icon {
-  width: 150px;
-  height: 150px;
-  margin-bottom: 30px;
-  border: 4px solid;
-  border-radius: 50%;
-  color: #f1b400;
-  font-size: 8rem;
-  line-height: 142px;
-}
-.skill-title {
-  margin: 0 20px 20px;
-  font-size: 2rem;
-}
-.skill-text {
-  margin: 0 20px;
-  line-height: 2;
-}
+
 
 
 /* --------------------------------
@@ -295,7 +328,7 @@ body {
 }
 
 .octicon-mark-github {
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 /* --------------------------------
@@ -355,6 +388,24 @@ small {
   }
 
   /* --- works --- */
+  .skills-wrapper,
+  .skill-box {
+    display: block;
+  }
+  .work-image2 {
+    display: none;
+  }
+  .skill-description {
+    position: relative;
+  }
+  .skill-box::after {
+    top: 0;
+    height: 100%;
+    background-size: cover;
+    transform: none;
+  }
+
+  /* --- works --- */
   .works-wrapper,
   .work-box {
     display: block;
@@ -373,7 +424,7 @@ small {
   }
 
   /* --- skills --- */
-  .skills-wrapper,
+  /* .skills-wrapper,
   .skill-box {
     display: block;
   }
@@ -388,7 +439,7 @@ small {
   }
   .skill-text {
     margin: 0;
-  }
+  } */
 
   /* --- contact --- */
   .contact {
