@@ -352,7 +352,7 @@ small {
 }
 @media (max-width: 768px) {
   body {
-    background: #151515 url('../images/cat-2352807_1920.jpg') no-repeat fixed 20%;
+    background: #151515 url('../images/cat-2352807_1920.jpg') no-repeat fixed;
     background-size: cover;
     font-size: 1.3rem;
   }
