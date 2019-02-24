@@ -62,7 +62,8 @@ body {
 }
 .button-ghost {
   border: 1px solid #fff;
-  background-color: rgba(255, 255, 255, 0.15);
+  /* background-color: rgba(255, 255, 255, 0.15); */
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .mouse-over a:hover svg {
   opacity: 0.7;
@@ -265,13 +266,16 @@ body {
   background-image: url('../images/work/cat-2352807_640-3.jpg');
 }
 .work-box.building::after {
-  background-image: url('../images/work/cell-phone-1245663_640.jpg');
+  background-image: url('../images/work/search-twitter.png');
 }
 .work-box.lake::after {
   background-image: url('../images/work/pythonfeatured.jpg');
 }
 .work-box.sky::after {
   background-image: url('../images/work/chatbot-3589528_640.jpg');
+}
+.work-box.chat::after {
+  background-image: url('../images/work/chat.png');
 }
 .work-box:nth-child(odd) .work-image {
   margin: 60% 0 0;
